@@ -1,5 +1,11 @@
 # TIL
 
-> Today I learned.
-> 오늘 배운 내용을 복습하고 정리해봅시다.
+> 배운 내용을 복습 및 정리
+> VS Code에서 진행
 
+----
+
+- [python]
+- [Git]
+- [Linux]
+- [Markdown]
