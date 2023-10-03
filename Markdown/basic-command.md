@@ -37,6 +37,6 @@ def func():
 console.log('hello')
 ```
 
-- [●] Write the press release
+- [ ] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
