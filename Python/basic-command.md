@@ -326,3 +326,120 @@ def my_sum(a: int, b: int) -> int:
 
 10. 재귀(recursive)
 - 재귀 함수는 함수 내부에서 자기 자신을 호출하는 함수를 의미한다.
+
+# 문자열 메소드(객체 안에 들어있는 함수)
+```python
+my_list = [1, 2, 3, 4, 5]
+```
+- capitalize()
+    - 문장의 시작을 대문자로 바꿈
+- title()
+    - 단어의 시작을 대문자로 바꿈
+- upper()
+    - 전체 대문자로 바꿈
+- lower()
+    - 전체 소문자로 바꿈;ㅔ
+- '?'.join()
+    - 문자열 리스트 중간을 문자(?)로 대체해서 합쳐줌 
+- .strip([chars])
+    - 좌우에서 문자열을 삭제
+    - .lstrip() : 왼쪽
+    - .rstrip() : 오른쪽 
+- .replace(old, new[, count])
+    - old를 new로 변경
+    - count만큼 변경한다.
+- .find()
+    - 문자열에서 찾고 싶은 문자의 index를 반환
+    - 없다면 -1을 반환
+- .index()
+    - 문자열에서 찾고 싶은 문자의 index를 반환
+    - 없으면 find랑 다르게 에러발생
+- .split()
+    - 문자를 기준으로 자른다.
+- .count()
+    - 문자열에서 특정 문자의 개수를 반환한다.
+
+# 리스트 메소드
+- .append(x)
+    - 리스트에 x요소 추가
+- .extend(iterable)
+    - 리스트랑 리스트 합침
+- .inster(idx, x)
+    - idx위치에 x요소 추가
+- .remove(x)
+    - x요소를 리스트에서 삭제
+- .pop(idx)
+    - numbers.pop() : 마지막 요소 추출, numbers를 호출해보면 마지막 요소가 삭제됨
+    - numbers.pop(0) : 0번째 index 요소 추출
+- .sort()
+    - 정렬
+    - numbers.sort(reverse=True) : 역정렬
+- .reverse()
+    - 반대로 나열
+
+# list copy
+```python
+a = [1, 2, 3]
+b = a[:]
+
+import copy
+a = [1, 2, [99, 100]]
+b = copy.deepcopy(a)
+```
+
+# list comprehension
+```python
+#for
+result = []
+
+for number in numbers:
+    result.append(number ** 3)
+    
+print(result)
+#comprehension
+result2 = [number **3 for number in numbers]
+print(result2)
+```
+
+# 딕셔너리 메소드
+```python
+info = {
+    'name' : 'ompang',
+    'location' : 'seoul',
+}
+```
+- .pop(key[, default])
+    - key에 해당하는 {key : value}가 삭제
+- .update(key=value)
+    - {key : value} 추가
+- .get(key[, default])
+    - key에 해당하는 value 추출
+
+# dict comprehension
+```python
+#for
+# {1 :1, 2: 8, 3: 9, ...}
+result  = {}
+numbers = range(1, 11)
+for number in numbers:
+    result[number] = number ** 3
+print(result)
+
+#comp
+result = {number: number **3 for number in range(1, 11)}
+print(result)
+```
+
+# 세트 메소드
+```python
+fruits = {'apple', 'anna', 'melon'}
+```
+- .add(x)
+    - 순서와 상관없이 요소
+- .update(x)
+    - 조각내서 각 요소를 추가
+    - .update({'apple', 'orange'}) : 단어로 추가
+- .remove(x)
+    - 요소 삭제
+- .pop()
+    - 요소 삭제
