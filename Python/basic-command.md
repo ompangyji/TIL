@@ -443,3 +443,28 @@ fruits = {'apple', 'anna', 'melon'}
     - 요소 삭제
 - .pop()
     - 요소 삭제
+
+# 모듈
+- `함수`들이 뭉쳐진 하나의 .py 파일
+
+# 패키지
+- 종종 라이브러리라고도 불림
+- 여러 개의 모듈을 그룹화 
+- 패키지 안에 __init__.py 파일이 있어야 패키지로 인식
+
+# 예외처리
+```python
+try:
+    code
+except 예외:
+    code
+else or finally or raise:
+    code
+```
+- else
+    - 예외를 일으키지 않을 때 실행되는 코드
+- finally
+    - 예외 상황과 무관하게 무조건 최종적으로 실행되는 코드
+
+- raise
+    - 예외를 강제로 발생시키는 상황에서 사용
