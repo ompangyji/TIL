@@ -1,5 +1,12 @@
-# basic command
-> Git 기본 문법 정리
+
+# Git이란?
+## 중앙집중식 버전 관리 시스템 VS 분산 버전 관리 시스템
+![[Pasted image 20231024173451.png]]
+### 중앙집중식 버전 관리 시스템(Centralized VCS)
+많은 클라이언트가 중앙 서버로부터 파일을 받아서 사용한다.
+### 분산 버전 관리 시스템(Distributed VCS)
+파일의 마지막 Snapshot을 checkout하지 않고 저장소와 히스토리를 모두 복제한다.
+# Git 기본 문법 정리
 
 ## 초기 설정
 ```bash
@@ -46,8 +53,6 @@ git config --global user.name <이름>
     - 옵션
         - `-a` : commit하기 전에 모든 파일이 자동으로 추가된다.
             - ex) git commit -a -m 'update'
-
-## 
 
 ## 참고자료
 
